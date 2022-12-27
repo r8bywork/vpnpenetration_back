@@ -1,7 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const config = require('./config/config.js')
-const Role = require('./models/Role.js')
 const authRouter = require('./routes/authRouter.js')
 
 const app = express()

@@ -1,21 +1,13 @@
 {
-	"name": "simple-authorization",
+	"name": "vpnpenetration_back",
 	"version": "1.0.0",
-	"description": "Simple Authorization With JWT Access Token",
+	"description": "Vpnpenetration backend",
 	"main": "index.js",
 	"scripts": {
 		"start": "nodemon index.js"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+ssh://git@github.com/ichepyxa/simple-authorization.git"
-	},
 	"author": "",
 	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/ichepyxa/simple-authorization/issues"
-	},
-	"homepage": "https://github.com/ichepyxa/simple-authorization#readme",
 	"dependencies": {
 		"bcrypt": "^5.0.1",
 		"express": "^4.18.1",
