@@ -2,6 +2,7 @@ const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const { validationResult } = require('express-validator')
 const User = require('../models/User')
+const Table = require('../models/Table')
 const Role = require('../models/Role')
 const { SecretKey } = require('../config/config.js')
 
@@ -64,17 +65,17 @@ const login = async (req, res) => {
 	}
 }
 
-const getUsers = async (req, res) => {
+const getTable = async (req, res) => {
 	try {
-		const users = await User.find()
-		return res.json(users)
+		const table = await Table.find()
+		return res.json(table)
 	} catch (error) {
-		res.status(400).json({ message: 'Get users error' })
+		res.status(400).json({ message: 'Get table error' })
 	}
 }
 
 module.exports = {
 	registration,
 	login,
-	getUsers,
+	getTable,
 }

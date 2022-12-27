@@ -2,11 +2,13 @@ const express = require('express')
 const mongoose = require('mongoose')
 const config = require('./config/config.js')
 const authRouter = require('./routes/authRouter.js')
+const tableRouter = require('./routes/tableRouter.js')
 
 const app = express()
 
 app.use(express.json())
 app.use('/auth', authRouter)
+app.use('/', tableRouter)
 
 async function start() {
 	try {
