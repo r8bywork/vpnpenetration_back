@@ -1,7 +1,5 @@
 module.exports = {
-	PORT: process.env.PORT || 5000,
-	MongoUrl: `mongodb+srv://admin:${
-		process.env.password || ''
-	}@cluster0.yd41umr.mongodb.net/simpleAuth?retryWrites=true&w=majority`,
+	PORT: process.env.PORT || 24678,
+	MongoUrl: `mongodb+srv://admin:vpnpenetration2022@cluster0.umpd8ig.mongodb.net/myFirstDatabase`,
 	SecretKey: 'jwt-secret-key',
 }
