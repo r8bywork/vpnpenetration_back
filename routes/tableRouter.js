@@ -4,6 +4,6 @@ const authMiddleware = require('../middlewares/authMiddleware.js')
 
 const router = new Router()
 
-router.get('/table', getTable)
+router.get('/table', authMiddleware, getTable)
 
 module.exports = router
